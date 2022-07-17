@@ -1,0 +1,97 @@
+/** @format */
+
+.first-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.first-sub-container {
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	height: 85%;
+}
+
+.first-logo {
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.first-progress-bar {
+	width: 20%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	/* counter-reset: step; */
+}
+
+.first-progress-bar > div:nth-child(2) {
+	background-color: rgb(90, 35, 216);
+	color: white;
+}
+
+.first-progress-bar::before,
+.first-progress {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 100%;
+	background-color: rgb(235, 227, 227);
+	/* counter-increment: step;
+	content: counter(step); */
+}
+
+.first-progress {
+	width: 0%;
+	background-color: rgb(90, 35, 216);
+}
+
+.first-progress-bar-step {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid rgb(235, 227, 227);
+	background-color: white;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+}
+
+.first-heading {
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.first-control {
+	width: 30%;
+	height: 40%;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 1020px) {
+	.first-control {
+		width: 280px;
+	}
+}
+
+@media screen and (max-width: 1098px) {
+	.first-progress-bar {
+		width: 250px;
+	}
+}

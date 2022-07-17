@@ -1,0 +1,135 @@
+/** @format */
+
+.fourth-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.fourth-sub-container {
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	height: 100%;
+}
+
+.fourth-logo {
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fourth-progress-bar {
+	width: 20%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fourth-progress-bar > div:nth-child(2),
+.fourth-progress-bar > div:nth-child(3),
+.fourth-progress-bar > div:nth-child(4),
+.fourth-progress-bar > div:nth-child(5) {
+	background-color: rgb(90, 35, 216);
+	color: white;
+}
+
+.fourth-progress-bar::before,
+.fourth-progress {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 100%;
+	background-color: rgb(235, 227, 227);
+}
+
+.fourth-progress {
+	width: 0%;
+	background-color: rgb(90, 35, 216);
+}
+
+.fourth-progress-bar-step {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid rgb(235, 227, 227);
+	background-color: white;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+}
+
+.fourth-tick {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(90, 35, 216);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fourth-tick > img {
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	background-color: rgb(90, 35, 216);
+}
+
+.fourth-heading {
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fourth-control {
+	width: 30%;
+	height: 40%;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.fourth-control > div:nth-child(1) {
+	display: flex;
+	flex-direction: row;
+}
+
+.fourth-control-card {
+	width: 50%;
+}
+
+.fourth-new-control-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.fourth-new-control-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+	.fourth-control {
+		width: 280px;
+	}
+}
+
+@media screen and (max-width: 1098px) {
+	.fourth-progress-bar {
+		width: 250px;
+	}
+}

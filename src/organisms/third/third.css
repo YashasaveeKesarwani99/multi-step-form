@@ -1,0 +1,120 @@
+/** @format */
+
+.third-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.third-sub-container {
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	height: 85%;
+}
+
+.third-logo {
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.third-progress-bar {
+	width: 20%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.third-progress-bar > div:nth-child(2),
+.third-progress-bar > div:nth-child(3),
+.third-progress-bar > div:nth-child(4) {
+	background-color: rgb(90, 35, 216);
+	color: white;
+}
+
+.third-progress-bar::before,
+.third-progress {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 100%;
+	background-color: rgb(235, 227, 227);
+}
+
+.third-progress {
+	width: 0%;
+	background-color: rgb(90, 35, 216);
+}
+
+.third-progress-bar-step {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid rgb(235, 227, 227);
+	background-color: white;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+}
+
+.third-heading {
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.third-control {
+	width: 30%;
+	height: 40%;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.third-control > div:nth-child(1) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 70%;
+}
+
+.third-control-card {
+	width: 50%;
+}
+
+.third-new-control-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.third-new-control-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+	.third-control {
+		width: 280px;
+	}
+}
+
+@media screen and (max-width: 1098px) {
+	.third-progress-bar {
+		width: 250px;
+	}
+}

@@ -1,0 +1,23 @@
+/** @format */
+
+.p {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+}
+
+.light {
+	font-weight: 400;
+	color: grey;
+}
+
+.p-12 {
+	font-size: 12px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.center {
+	text-align: center;
+}

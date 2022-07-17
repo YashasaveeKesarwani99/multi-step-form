@@ -1,0 +1,107 @@
+/** @format */
+
+.second-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.second-sub-container {
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	height: 85%;
+}
+
+.second-logo {
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.second-progress-bar {
+	width: 20%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-progress-bar > div:nth-child(2),
+.second-progress-bar > div:nth-child(3) {
+	background-color: rgb(90, 35, 216);
+	color: white;
+}
+
+.second-progress-bar::before,
+.second-progress {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 100%;
+	background-color: rgb(235, 227, 227);
+}
+
+.second-progress {
+	width: 0%;
+	background-color: rgb(90, 35, 216);
+}
+
+.second-progress-bar-step {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid rgb(235, 227, 227);
+	background-color: white;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+}
+
+.second-heading {
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.second-control {
+	width: 30%;
+	height: 40%;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.second-new-control-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.second-new-control-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+	.second-control {
+		width: 280px;
+	}
+}
+
+@media screen and (max-width: 1098px) {
+	.second-progress-bar {
+		width: 250px;
+	}
+}
