@@ -60,13 +60,9 @@ const Second = () => {
 							<Input placeholder={"Example"} />
 						</div>
 					</div>
-					<Button>
-						<Link
-							to='/third'
-							style={{ color: "white", textDecoration: "none" }}>
-							Create Workspace
-						</Link>
-					</Button>
+					<Link to='/third' style={{ color: "white", textDecoration: "none" }}>
+						<Button>Create Workspace</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

@@ -61,13 +61,9 @@ const Third = () => {
 							/>
 						</div>
 					</div>
-					<Button>
-						<Link
-							to='/fourth'
-							style={{ color: "white", textDecoration: "none" }}>
-							Create Workspace
-						</Link>
-					</Button>
+					<Link to='/fourth' style={{ color: "white", textDecoration: "none" }}>
+						<Button>Create Workspace</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

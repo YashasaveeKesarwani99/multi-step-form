@@ -49,14 +49,9 @@ const First = () => {
 					<div>
 						<Control label={"Display Name"} placeholder={"Steve"} />
 					</div>
-
-					<Button>
-						<Link
-							to='/second'
-							style={{ color: "white", textDecoration: "none" }}>
-							Create Workspace
-						</Link>
-					</Button>
+					<Link to='/second' style={{ color: "white", textDecoration: "none" }}>
+						<Button>Create Workspace</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

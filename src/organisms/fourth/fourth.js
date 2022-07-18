@@ -48,11 +48,9 @@ const Fourth = () => {
 					</div>
 				</div>
 				<div className='fourth-control'>
-					<Button>
-						<Link to='/' style={{ color: "white", textDecoration: "none" }}>
-							Launch Eden
-						</Link>
-					</Button>
+					<Link to='/' style={{ color: "white", textDecoration: "none" }}>
+						<Button>Launch Eden</Button>
+					</Link>
 				</div>
 			</div>
 		</div>
